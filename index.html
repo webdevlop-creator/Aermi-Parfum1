@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Aermi Parfum</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Aermi Parfum</h1> 
+  <p class="desc">Parfum original, wangi tahan lama untuk aktivitas harian</p> 
+
+  <div class="container">
+    <!-- PARFUM 1 -->
+    <div class="card" onclick="openDetail('Diamond Floral', 'Aroma segar dan tahan lama', '50000')">
+      <img src="parfum1.jpeg"> <!-- GANTI: foto parfum -->
+      <h3>Diamond Floral</h3> <!-- GANTI: nama parfum -->
+    </div>
+
+    <!-- PARFUM 2 -->
+    <div class="card" onclick="openDetail('Cool Mist', 'Aroma manis dan elegan', '50000')">
+      <img src="parfum2.jpg"> <!-- GANTI: foto parfum -->
+      <h3>Cool Mist</h3>
+    </div>
+
+    <!-- PARFUM 3 -->
+    <div class="card" onclick="openDetail('Master Rich', 'Aroma maskulin dan hangat', '50000')">
+      <img src="parfum3.jpg"> <!-- GANTI: foto parfum -->
+      <h3>Master Rich</h3>
+    </div>
+  </div>
+
+  <!-- DETAIL PARFUM -->
+  <div id="detail" style="display:none;">
+    <h2 id="namaParfum"></h2>
+    <p id="deskripsiParfum"></p>
+    <p id="hargaParfum"></p>
+
+    <a id="waBtn" target="_blank">Order via WhatsApp</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>  
